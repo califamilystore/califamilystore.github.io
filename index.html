@@ -1,13 +1,71 @@
 <html>
 <head>
+<style>
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    /* background-image: url(http://i.imgur.com/K0Us5yL.jpg); */
+    background-image: url(http://i.imgur.com/eXmmAv8.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    -webkit-filter: brightness(0.75);
+  }
+  .content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2em;
+  }
+  .text-title, .text-subtitle, .text-normal {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  .text-title {
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+  }
+  .text-subtitle {
+    font-size: 1em;
+    text-align: center;
+  }
+  .text-normal {
+    font-size: 1em;
+  }
+  a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  }
+</style>
 </head>
 <body>
-<img src='http://i.imgur.com/75Sxf7j.png'/>
-<p>We are a family owned online business based in California.
+<!-- img src='http://i.imgur.com/75Sxf7j.png'/ -->
+<div class=background-image></div>
+<div class=content>
+<br>
+<h1 class=text-title>Cali Family Store</h1>
 
-<p>If you are interested in acquiring wholesale products, please contact us at <span><img src="http://i.imgur.com/yHP23Rn.png"></img></span>
+<p class=text-subtitle>Your personal, friendly store.</p>
 
-<p>Website is still under development.
+<p class=text-normal>Visit our <a title="Amazon store" href="http://www.amazon.com/shops/califam">Amazon store</a><p>
+
+<p class=text-normal>If you are interested in acquiring products wholesale, please contact us at <a href="mailto:califamilystore@gmail.com">califamilystore@gmail.com</a>.</p>
+</div>
+
 </body>
 </html>
 
