@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="util.js"></script>
 </head>
 <body>
 <script>
@@ -14,10 +15,7 @@
 </script>
 
 <script>
-n = Date.now();
-ts = Math.floor(n/1000) - 21;
-url = "http://www.amazon.com/Fly-Universal-Holder-charger-Samsung/dp/B00SX801ZU/?ie=UTF8&qid=" + ts;
-url = url + "&m=A1DVKD1HDAVP5W&keywords=universal+car+phone+mount";
+url = makeUrl("A1DVKD1HDAVP5W", "B00SX801ZU", "Fly-Universal-Holder-charger-Samsung", "car+phone+holder");
 window.location.href = url
 </script>
 </body>
